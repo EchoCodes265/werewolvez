@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Night Ultimate Werewolf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-setup" class="container">
+        <h1>One Night Ultimate Werewolf</h1>
+        <label for="player-count">Number of Players:</label>
+        <input type="number" id="player-count" min="5" max="8" value="5">
+        <button onclick="generatePlayerInputs()">Enter Player Names</button>
+        <div id="player-names"></div>
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <div id="role-reveal" class="container" style="display: none;">
+        <h2>Role Reveal</h2>
+        <p id="player-role-reveal"></p>
+        <button onclick="revealRole()">Reveal Role</button>
+        <button onclick="nextRole()" style="display: none;">Next</button>
+    </div>
+
+    <div id="game-board" class="container" style="display: none;">
+        <h2>Night Phase</h2>
+        <p id="night-phase-instructions">Follow the instructions for each role...</p>
+        <div id="actions" class="actions"></div>
+    </div>
+
+    <div id="discussion-phase" class="container" style="display: none;">
+        <h2>Discussion Phase</h2>
+        <div id="timer">05:00</div>
+    </div>
+
+    <div id="voting-phase" class="container" style="display: none;">
+        <h2>Voting Phase</h2>
+        <p id="voting-instructions">Vote for the player you suspect is a werewolf.</p>
+        <p id="player-vote"></p>
+        <button onclick="castVote()">Vote</button>
+        <button onclick="nextVoter()" style="display: none;">Next</button>
+    </div>
+
+    <div id="results" class="container" style="display: none;">
+        <h2>Game Over</h2>
+        <p id="results-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

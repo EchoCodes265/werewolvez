@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: rgb(22, 76, 255);
+}
+
+#game-setup, #game-board, #discussion-phase, #role-reveal {
+    margin-top: 20px;
+}
+
+button {
+    background-color: rgb(22, 76, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#role-descriptions {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#roles-info {
+    margin-top: 20px;
+}
+
+.role-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#timer {
+    font-size: 2em;
+    margin-top: 20px;
+}
