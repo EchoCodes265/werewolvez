@@ -14,6 +14,4 @@ Werewolvez is a web-based game application inspired by the classic social deduct
 - **Socket.IO**: A library for real-time web applications that allows bi-directional communication.
 - **MongoDB**: A NoSQL database for storing player data and game states.
 
-## View it online!
 
-[https://werewolvez.onrender.com](https://werewolvez.onrender.com)
